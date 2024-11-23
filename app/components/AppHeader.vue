@@ -13,8 +13,8 @@ const { header } = useAppConfig()
         <UColorModeImage v-bind="{ class: 'h-6 w-auto', ...header?.logo }" />
       </template>
       <template v-else>
-        Nuxt UI Pro <UBadge
-          label="Docs"
+        AoC Solutions <UBadge
+          label="by Dean Rumsby"
           variant="subtle"
           class="mb-0.5"
         />
