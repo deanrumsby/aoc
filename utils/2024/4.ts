@@ -38,6 +38,11 @@ function getLine(ws: Wordsearch, point: Point, direction: Direction): string {
 
 function countXmasLinesAtPoint(ws: Wordsearch, point: Point): number {
   const [i, j] = point
+
+  if (ws[i][j] !== 'X') {
+    return 0
+  }
+
   const lines = []
   if (i <= (ws[i].length - 4)) {
     lines.push(getLine(ws, point, 'south'))
